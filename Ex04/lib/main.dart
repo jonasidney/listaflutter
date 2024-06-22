@@ -28,10 +28,11 @@ class _MovieListPageState extends State<MovieListPage> {
 
   void _addMovie() {
     if (_controller.text.isEmpty) {
-      _showAlertDialog();
+      _showAlertDialogEmpty();
     } else {
       setState(() {
         _movies.add(_controller.text);
+        _showAlertDialogAdd();
         _controller.clear();
       });
     }
@@ -40,16 +41,57 @@ class _MovieListPageState extends State<MovieListPage> {
   void _removeMovie(int index) {
     setState(() {
       _movies.removeAt(index);
+      _showAlertDialogRem();
     });
   }
 
-  void _showAlertDialog() {
+  void _showAlertDialogEmpty() {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text("Atenção!"),
           content: Text("Digite o nome de um Filme."),
+          actions: <Widget>[
+            TextButton(
+              child: Text("OK"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _showAlertDialogAdd() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Sucesso!"),
+          content: Text("Filme Incluído na Lista."),
+          actions: <Widget>[
+            TextButton(
+              child: Text("OK"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _showAlertDialogRem() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Atenção!"),
+          content: Text("Filme Removido da Lista."),
           actions: <Widget>[
             TextButton(
               child: Text("OK"),
