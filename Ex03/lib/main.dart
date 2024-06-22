@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String appTitle = 'As 7 Maravilhas do Mundo';
+    const String appTitle = 'AS 7 MARAVILHAS DO MUNDO';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
@@ -18,42 +18,145 @@ class MyApp extends StatelessWidget {
         body: const SingleChildScrollView(
           child: Column(
             children: [
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
               ImageSection(
-                image: 'images/img1.png',
+                image: 'images/maravilha_01.jpg',
               ),
               TitleSection(
-                name: 'Oeschinen Lake Campground',
-                location: 'Kandersteg, Switzerland',
+                name: 'Grande Muralha da China',
+                location: 'China',
               ),
               //ButtonSection(),
               TextSection(
                 description:
-                    'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
-                    'Bernese Alps. Situated 1,578 meters above sea level, it '
-                    'is one of the larger Alpine Lakes. A gondola ride from '
-                    'Kandersteg, followed by a half-hour walk through pastures '
-                    'and pine forest, leads you to the lake, which warms to 20 '
-                    'degrees Celsius in the summer. Activities enjoyed here '
-                    'include rowing, and riding the summer toboggan run...',
+                    'Uma impressionante série de fortificações feitas de pedra,'
+                    'tijolo e outros materiais, construída ao longo de séculos'
+                    'para proteger a China contra invasões. A muralha se estende'
+                    'por milhares de quilômetros através de montanhas e desertos.',
               ),
-
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
               ImageSection(
-                image: 'images/img2.jpg',
+                image: 'images/maravilha_02.jpg',
               ),
               TitleSection(
-                name: 'Oeschinen Lake Campground',
-                location: 'Kandersteg, Switzerland',
+                name: 'Cidade de Petra',
+                location: 'Jordânia',
               ),
               //ButtonSection(),
               TextSection(
                 description:
-                    'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
-                    'Bernese Alps. Situated 1,578 meters above sea level, it '
-                    'is one of the larger Alpine Lakes. A gondola ride from '
-                    'Kandersteg, followed by a half-hour walk through pastures '
-                    'and pine forest, leads you to the lake, which warms to 20 '
-                    'degrees Celsius in the summer. Activities enjoyed here '
-                    'include rowing, and riding the summer toboggan run...',
+                    'Uma cidade histórica e arqueológica famosa por sua arquitetura'
+                    'esculpida em rochas. Petra foi a capital do antigo reino Nabateu'
+                    'e é conhecida por suas fachadas monumentais, incluindo o famoso'
+                    'Tesouro (Al-Khazneh).',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              ImageSection(
+                image: 'images/maravilha_03.jpg',
+              ),
+              TitleSection(
+                name: 'Cristo Redentor',
+                location: 'Brasil',
+              ),
+              //ButtonSection(),
+              TextSection(
+                description:
+                    'Uma estátua de Jesus Cristo localizada no topo do Morro do'
+                    'Corcovado, no Rio de Janeiro. A estátua, com braços abertos,'
+                    'é um símbolo do Cristianismo e uma icônica imagem da cidade.',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              ImageSection(
+                image: 'images/maravilha_04.jpg',
+              ),
+              TitleSection(
+                name: 'Machu Pichu',
+                location: 'Peru',
+              ),
+              //ButtonSection(),
+              TextSection(
+                description:
+                    'Uma antiga cidade Inca situada nas montanhas dos Andes, famosa'
+                    'por suas ruínas bem preservadas e vistas panorâmicas. Machu Picchu'
+                    'é um exemplo impressionante da engenharia e arquitetura dos Incas.',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              ImageSection(
+                image: 'images/maravilha_05.jpg',
+              ),
+              TitleSection(
+                name: 'Chichén Itzá',
+                location: 'México',
+              ),
+              //ButtonSection(),
+              TextSection(
+                description:
+                    'Um complexo de ruínas maias na Península de Yucatán. A pirâmide'
+                    'de Kukulkán é o destaque, refletindo a profunda compreensão maia'
+                    'de astronomia e engenharia.',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              ImageSection(
+                image: 'images/maravilha_06.jpg',
+              ),
+              TitleSection(
+                name: 'Coliseu',
+                location: 'Itália',
+              ),
+              //ButtonSection(),
+              TextSection(
+                description:
+                    'Um anfiteatro oval no centro de Roma, conhecido por suas grandiosas'
+                    'estruturas e pela realização de combates de gladiadores. É um símbolo'
+                    'duradouro do Império Romano.',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              ImageSection(
+                image: 'images/maravilha_07.jpg',
+              ),
+              TitleSection(
+                name: 'Taj Mahal',
+                location: 'Índia',
+              ),
+              //ButtonSection(),
+              TextSection(
+                description:
+                    'Um mausoléu de mármore branco em Agra, construído pelo imperador'
+                    'Mughal Shah Jahan em memória de sua esposa Mumtaz Mahal. É celebrado'
+                    'por sua beleza arquitetônica e história de amor.',
+              ),
+              Divider(
+                height: 10.0,
+                thickness: 1.0,
+                color: Colors.grey,
               ),
 
             ],
