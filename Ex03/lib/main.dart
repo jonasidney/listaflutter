@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -18,11 +19,7 @@ class MyApp extends StatelessWidget {
         body: const SingleChildScrollView(
           child: Column(
             children: [
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+              Separador(),
               ImageSection(
                 image: 'images/maravilha_01.jpg',
               ),
@@ -38,11 +35,9 @@ class MyApp extends StatelessWidget {
                     'para proteger a China contra invasões. A muralha se estende'
                     'por milhares de quilômetros através de montanhas e desertos.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_02.jpg',
               ),
@@ -58,11 +53,9 @@ class MyApp extends StatelessWidget {
                     'e é conhecida por suas fachadas monumentais, incluindo o famoso'
                     'Tesouro (Al-Khazneh).',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_03.jpg',
               ),
@@ -77,11 +70,9 @@ class MyApp extends StatelessWidget {
                     'Corcovado, no Rio de Janeiro. A estátua, com braços abertos,'
                     'é um símbolo do Cristianismo e uma icônica imagem da cidade.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_04.jpg',
               ),
@@ -96,11 +87,9 @@ class MyApp extends StatelessWidget {
                     'por suas ruínas bem preservadas e vistas panorâmicas. Machu Picchu'
                     'é um exemplo impressionante da engenharia e arquitetura dos Incas.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_05.jpg',
               ),
@@ -115,11 +104,9 @@ class MyApp extends StatelessWidget {
                     'de Kukulkán é o destaque, refletindo a profunda compreensão maia'
                     'de astronomia e engenharia.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_06.jpg',
               ),
@@ -134,11 +121,9 @@ class MyApp extends StatelessWidget {
                     'estruturas e pela realização de combates de gladiadores. É um símbolo'
                     'duradouro do Império Romano.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
+
+              Separador(),
+
               ImageSection(
                 image: 'images/maravilha_07.jpg',
               ),
@@ -153,12 +138,7 @@ class MyApp extends StatelessWidget {
                     'Mughal Shah Jahan em memória de sua esposa Mumtaz Mahal. É celebrado'
                     'por sua beleza arquitetônica e história de amor.',
               ),
-              Divider(
-                height: 10.0,
-                thickness: 1.0,
-                color: Colors.grey,
-              ),
-
+                           
             ],
           ),
         ),
@@ -249,5 +229,20 @@ class ImageSection extends StatelessWidget {
       fit: BoxFit.cover,
     );
     // #enddocregion Image-asset
+  }
+}
+
+//teste
+class Separador extends StatelessWidget {
+  const Separador({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.0,
+      width: double.infinity,
+      color: Colors.grey,
+      margin: const EdgeInsets.symmetric(horizontal: 20.0),
+    );
   }
 }
