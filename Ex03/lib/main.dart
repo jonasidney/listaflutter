@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(appTitle),
+          centerTitle: true,
         ),
         // #docregion addWidget
         body: const SingleChildScrollView(
